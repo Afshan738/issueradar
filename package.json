@@ -1,0 +1,24 @@
+{
+  "name": "issueradar",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Afshan738/issueradar.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Afshan738/issueradar/issues"
+  },
+  "homepage": "https://github.com/Afshan738/issueradar#readme",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "node-fetch": "^3.3.2"
+  }
+}
