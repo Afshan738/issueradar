@@ -18,7 +18,6 @@
   "homepage": "https://github.com/Afshan738/issueradar#readme",
   "description": "",
   "dependencies": {
-    "dotenv": "^17.4.2",
-    "node-fetch": "^3.3.2"
+    "dotenv": "^17.4.2"
   }
 }

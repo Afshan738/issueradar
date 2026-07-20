@@ -1,4 +1,4 @@
-const fetch = require("node-fetch");
+// const fetch = require("node-fetch");
 
 const NTFY_TOPIC = process.env.NTFY_TOPIC;
 
