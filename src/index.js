@@ -5,8 +5,14 @@ const fs = require("fs");
 const SEEN_FILE = "seen_issues.json";
 
 function loadSeen() {
-  if (!fs.existsSync(SEEN_FILE)) return [];
-  return JSON.parse(fs.readFileSync(SEEN_FILE, "utf8"));
+  try {
+    if (!fs.existsSync(SEEN_FILE)) return [];
+    const content = fs.readFileSync(SEEN_FILE, "utf8").trim();
+    if (!content || content.charCodeAt(0) === 0xfeff) return [];
+    return JSON.parse(content);
+  } catch (e) {
+    return [];
+  }
 }
 
 function saveSeen(seen) {
